@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आदर्श किराणा स्टोअर्स | नवा मोंढा, गंगाखेड</title>
+    <meta name="description" content="आदर्श किराणा स्टोअर्स, नवा मोंढा, गंगाखेड — आमच्याकडे सर्व प्रकारचा किराणा, भुसार, खाद्यतेल व गाईचे तूप योग्य भावात मिळेल. प्रो. प्रा. माधव चोरघडे.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Rozha One, Yatra One, Tiro Devanagari Marathi & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Marathi:ital@0;1&family=Yatra+One&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6.5 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind Custom Design Tokens -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#faf8f3',
+                        emeraldDeep: '#0b3d24',
+                        emeraldRoyal: '#14532d',
+                        growwGreen: '#00b386',
+                        growwDeep: '#0b6e4f',
+                        growwMint: '#e8f9f4',
+                        goldLuxury: '#d4a017',
+                        goldWarm: '#f5c542',
+                        inkDark: '#121c17'
+                    },
+                    fontFamily: {
+                        rozha: ['"Rozha One"', 'serif'],
+                        yatra: ['"Yatra One"', 'serif'],
+                        marathi: ['"Tiro Devanagari Marathi"', '"Poppins"', 'serif'],
+                        sans: ['"Poppins"', '"Tiro Devanagari Marathi"', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        :root {
+            --ivory: #faf8f3;
+            --emerald-deep: #0b3d24;
+            --emerald-royal: #14532d;
+            --gold-luxury: #d4a017;
+            --gold-warm: #f5c542;
+            --groww-green: #00b386;
+            --groww-deep: #0b6e4f;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--ivory);
+            color: #121c17;
+            font-family: 'Tiro Devanagari Marathi', 'Poppins', serif;
+            overflow-x: hidden;
+        }
+
+        .num-font {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Elegant Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f2ede2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #14532d, #0b3d24);
+            border-radius: 999px;
+        }
+
+        /* =====================================================================
+           HERO PHOTO BACKGROUND & PARALLAX STRIP (66251.jpg & 66252.jpg)
+        ===================================================================== */
+        .hero-photo-layer {
+            background-color: #0b3d24;
+            background-image:
+                radial-gradient(circle at 50% 24%, rgba(245, 197, 66, 0.16) 0%, transparent 45%),
+                linear-gradient(160deg, rgba(11, 61, 36, 0.90) 0%, rgba(10, 34, 22, 0.88) 55%, rgba(7, 22, 15, 0.95) 100%),
+                url('66251.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .parallax-band {
+            background-color: #0b3d24;
+            background-image:
+                linear-gradient(135deg, rgba(11, 61, 36, 0.92) 0%, rgba(20, 83, 45, 0.82) 50%, rgba(10, 26, 18, 0.93) 100%),
+                url('66252.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 768px) {
+            .parallax-band {
+                background-attachment: scroll;
+            }
+        }
+
+        /* =====================================================================
+           DIVINE GANPATI & ROTATING GOLDEN CHAKRA ANIMATIONS
+        ===================================================================== */
+        @keyframes rotateChakra {
+            0%   { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes rotateChakraReverse {
+            0%   { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        @keyframes divineAuraPulse {
+            0%, 100% { opacity: 0.55; transform: scale(0.96); }
+            50%      { opacity: 0.92; transform: scale(1.06); }
+        }
+
+        .chakra-spin-main {
+            animation: rotateChakra 22s linear infinite;
+            transform-origin: center;
+            will-change: transform;
+        }
+
+        .chakra-spin-counter {
+            animation: rotateChakraReverse 36s linear infinite;
+            transform-origin: center;
+            will-change: transform;
+        }
+
+        .divine-aura {
+            animation: divineAuraPulse 4.5s ease-in-out infinite;
+        }
+
+        /* Royal Gold Ornamental Divider */
+        .gold-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #d4a017, #f5c542, #d4a017, transparent);
+            border-radius: 999px;
+        }
+
+        /* Signature Royal Tagline Ribbon */
+        .royal-tagline-ribbon {
+            background: linear-gradient(135deg, rgba(212, 160, 23, 0.22), rgba(20, 83, 45, 0.72), rgba(212, 160, 23, 0.22));
+            border: 1px solid rgba(245, 197, 66, 0.55);
+            box-shadow: 0 12px 32px -10px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+        }
+
+        /* =====================================================================
+           GROWW-INSPIRED ULTRA-SMOOTH FINTECH RANGE SLIDERS
+        ===================================================================== */
+        input[type="range"].smooth-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 7px;
+            border-radius: 999px;
+            background: #e5e7eb;
+            outline: none;
+            cursor: pointer;
+            transition: background 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        input[type="range"].smooth-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 4px solid #00b386;
+            box-shadow: 0 3px 12px rgba(0, 179, 134, 0.38), 0 0 0 2px rgba(255, 255, 255, 0.9);
+            cursor: pointer;
+            transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        input[type="range"].smooth-slider::-webkit-slider-thumb:hover,
+        input[type="range"].smooth-slider:active::-webkit-slider-thumb {
+            transform: scale(1.18);
+            border-color: #0b6e4f;
+            box-shadow: 0 4px 16px rgba(0, 179, 134, 0.52), 0 0 0 5px rgba(0, 179, 134, 0.15);
+        }
+
+        input[type="range"].smooth-slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 4px solid #00b386;
+            box-shadow: 0 3px 12px rgba(0, 179, 134, 0.38);
+            cursor: pointer;
+            transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Smooth Donut Chart Segment Transition */
+        .donut-arc {
+            transition: stroke-dasharray 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+                        stroke-dashoffset 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Calculator Card Highlight Pulse when scrolled from Hero Button */
+        @keyframes calcHighlightPulse {
+            0%   { box-shadow: 0 18px 48px -14px rgba(11, 61, 36, 0.14), 0 0 0 0 rgba(212, 160, 23, 0.65); border-color: #d4a017; }
+            45%  { box-shadow: 0 22px 56px -12px rgba(0, 179, 134, 0.28), 0 0 0 12px rgba(0, 179, 134, 0.12); border-color: #00b386; }
+            100% { box-shadow: 0 18px 48px -14px rgba(11, 61, 36, 0.12), 0 0 0 0 rgba(0, 179, 134, 0); border-color: #e5e7eb; }
+        }
+
+        .calc-pulse-active {
+            animation: calcHighlightPulse 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* Dual-Ring Golden-Emerald Spinner (Check Budget Loader) */
+        @keyframes spinDualOuter {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+        @keyframes spinDualInner {
+            from { transform: rotate(360deg); }
+            to   { transform: rotate(0deg); }
+        }
+        .loader-outer-arc {
+            transform-origin: center;
+            animation: spinDualOuter 0.85s linear infinite;
+        }
+        .loader-inner-arc {
+            transform-origin: center;
+            animation: spinDualInner 1.15s linear infinite;
+        }
+
+        /* Scroll Reveal Entrance */
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1), transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-item.is-shown {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Modal Pop Entrance */
+        @keyframes modalPopIn {
+            0%   { opacity: 0; transform: scale(0.93) translateY(10px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal-pop {
+            animation: modalPopIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-ivory text-inkDark antialiased selection:bg-growwGreen/20 selection:text-emeraldDeep">
+
+    <!-- =========================================================================
+         1. VERY TOP AUSPICIOUS STRIP + LIVE STORE STATUS (सकाळी ८:३० ते रात्री ९:००)
+    ========================================================================== -->
+    <div class="bg-emeraldDeep text-amber-100 border-b border-goldWarm/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm">
+            <!-- Auspicious Greeting -->
+            <div class="font-yatra text-goldWarm tracking-wider text-sm sm:text-base flex items-center gap-2">
+                <span>✦</span>
+                <span>|| श्री गणेशाय नमः ||</span>
+                <span>✦</span>
+            </div>
+
+            <!-- Live Store Open/Closed Badge (IST 8:30 AM - 9:00 PM) -->
+            <div id="storeStatusPill"
+                 class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-goldWarm/35 text-xs font-medium text-white">
+                <span id="storeStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]"></span>
+                <span id="storeStatusText">दुकान सध्या सुरू आहे (सकाळी ८:३० ते रात्री ९:००)</span>
+            </div>
+
+            <!-- Quick Desktop Phone Numbers -->
+            <div class="hidden md:flex items-center gap-3 text-amber-200 num-font text-xs font-medium">
+                <a href="tel:9881543739" class="hover:text-white transition-colors inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-goldWarm"></i>
+                    <span>9881543739</span>
+                </a>
+                <span class="opacity-40">|</span>
+                <a href="tel:9881111306" class="hover:text-white transition-colors inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-goldWarm"></i>
+                    <span>9881111306</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         2. STICKY ROYAL GLASSMORPHIC NAVBAR
+    ========================================================================== -->
+    <header class="sticky top-0 z-50 bg-white/88 backdrop-blur-xl border-b border-amber-900/10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-[74px] flex items-center justify-between gap-3">
+            <!-- Store Crest -->
+            <a href="#home" class="flex items-center gap-3 group shrink-0">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-emeraldDeep to-emeraldRoyal border-2 border-goldWarm flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+                    <span class="font-rozha text-2xl text-goldWarm leading-none pt-0.5">आ</span>
+                </div>
+                <div class="leading-tight">
+                    <span class="block font-rozha text-xl sm:text-2xl text-emeraldDeep tracking-wide">आदर्श किराणा स्टोअर्स</span>
+                    <span class="block text-[11px] sm:text-xs font-semibold text-goldLuxury">नवा मोंढा, गंगाखेड</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700">
+                <a href="#home" class="hover:text-emeraldRoyal transition-colors">मुख्य पान</a>
+                <a href="#trust-stats" class="hover:text-emeraldRoyal transition-colors">विश्वास</a>
+                <button type="button" onclick="scrollToCalculator(false)" class="hover:text-growwDeep transition-colors cursor-pointer font-semibold">
+                    बजेट कॅल्क्युलेटर
+                </button>
+                <a href="#categories" class="hover:text-emeraldRoyal transition-colors">किराणा विभाग</a>
+                <a href="#grocery-list" class="hover:text-emeraldRoyal transition-colors inline-flex items-center gap-1.5">
+                    <span>यादी तयार करा</span>
+                    <span id="navListBadge" class="num-font text-[11px] font-bold bg-growwGreen text-white px-2 py-0.5 rounded-full leading-none">0</span>
+                </a>
+                <a href="#contact" class="hover:text-emeraldRoyal transition-colors">संपर्क</a>
+            </nav>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-2.5">
+                <a href="tel:9881111306"
+                   class="inline-flex items-center gap-2 bg-emeraldDeep hover:bg-emeraldRoyal text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-full shadow-md transition-all hover:-translate-y-0.5">
+                    <i class="fa-solid fa-phone-volume text-goldWarm"></i>
+                    <span>थेट कॉल करा</span>
+                </a>
+
+                <button id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="मेनू उघडा"
+                        class="lg:hidden w-10 h-10 rounded-xl bg-ivory border border-gray-200 text-emeraldDeep flex items-center justify-center hover:bg-emeraldDeep hover:text-white transition-colors cursor-pointer">
+                    <i id="mobileMenuIcon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenuDrawer" class="hidden lg:hidden bg-white border-t border-gray-200 px-4 py-4 shadow-xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-semibold text-gray-800">
+                <a href="#home" onclick="toggleMobileMenu()" class="px-4 py-3 rounded-xl hover:bg-emerald-50 flex items-center justify-between">
+                    <span>मुख्य पान</span><i class="fa-solid fa-chevron-right text-xs text-goldLuxury"></i>
+                </a>
+                <button type="button" onclick="toggleMobileMenu(); scrollToCalculator(true);" class="px-4 py-3 rounded-xl hover:bg-emerald-50 flex items-center justify-between text-left cursor-pointer">
+                    <span class="text-growwDeep font-bold">बजेट कॅल्क्युलेटर</span><i class="fa-solid fa-calculator text-xs text-growwGreen"></i>
+                </button>
+                <a href="#categories" onclick="toggleMobileMenu()" class="px-4 py-3 rounded-xl hover:bg-emerald-50 flex items-center justify-between">
+                    <span>किराणा व भुसार विभाग</span><i class="fa-solid fa-chevron-right text-xs text-goldLuxury"></i>
+                </a>
+                <a href="#grocery-list" onclick="toggleMobileMenu()" class="px-4 py-3 rounded-xl hover:bg-emerald-50 flex items-center justify-between">
+                    <span>यादी तयार करा (<span id="mobileListBadge" class="num-font text-growwDeep font-bold">0</span>)</span><i class="fa-solid fa-chevron-right text-xs text-goldLuxury"></i>
+                </a>
+                <a href="#gallery" onclick="toggleMobileMenu()" class="px-4 py-3 rounded-xl hover:bg-emerald-50 flex items-center justify-between">
+                    <span>दुकानाची झलक</span><i class="fa-solid fa-chevron-right text-xs text-goldLuxury"></i>
+                </a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="px-4 py-3 rounded-xl hover:bg-emerald-50 flex items-center justify-between">
+                    <span>संपर्क व पत्ता</span><i class="fa-solid fa-chevron-right text-xs text-goldLuxury"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         3. GRAND ROYAL HERO SECTION
+            - Sacred Lord Ganesha Emblem with Rotating Golden Chakra directly ABOVE
+              "प्रो. प्रा. माधव चोरघडे"
+            - 3 Prominent Action Buttons immediately visible on opening:
+              1. दुकानाचा पत्ता | 2. थेट कॉल करा | 3. बजेट कॅल्क्युलेटर
+    ========================================================================== -->
+    <section id="home" class="relative min-h-[88vh] flex items-center justify-center overflow-hidden bg-emeraldDeep">
+        <!-- Real Store Background (66251.jpg) with Royal Deep Emerald Overlay -->
+        <div id="heroBgLayer" class="hero-photo-layer absolute inset-0 scale-105 transition-transform duration-300 ease-out"></div>
+
+        <!-- Subtle Golden Shimmer Particles Canvas -->
+        <canvas id="heroGoldenParticles" class="absolute inset-0 w-full h-full pointer-events-none z-10"></canvas>
+
+        <!-- Hero Content -->
+        <div class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center w-full">
+
+            <!-- ===============================================================
+                 SACRED LORD GANESHA EMBLEM + SMOOTH ROTATING GOLDEN CHAKRA
+                 (Positioned Directly Above "प्रो. प्रा. माधव चोरघडे")
+            ================================================================ -->
+            <div class="relative mx-auto w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center mb-4 select-none" aria-label="श्री गणेशाय नमः">
+                <!-- Warm Pulsing Golden Divine Glow Aura -->
+                <div class="divine-aura absolute inset-1 rounded-full bg-gradient-to-r from-amber-400/40 via-goldWarm/55 to-orange-400/40 blur-2xl pointer-events-none"></div>
+
+                <!-- Primary Smooth 360-Degree Rotating Golden Chakra / Sunburst Mandala SVG -->
+                <svg class="chakra-spin-main absolute inset-0 w-full h-full drop-shadow-[0_0_16px_rgba(245,197,66,0.65)]"
+                     viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="chakraGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#fff0a6"/>
+                            <stop offset="45%" stop-color="#f5c542"/>
+                            <stop offset="100%" stop-color="#d4a017"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Outer Sacred Sunburst Rays (16 pointed divine chakra spokes) -->
+                    <g fill="url(#chakraGoldGrad)" opacity="0.92">
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(22.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(45 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(67.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(90 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(112.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(135 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(157.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(180 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(202.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(225 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(247.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(270 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(292.5 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(315 110 110)"/>
+                        <path d="M110 4 L115 28 L110 23 L105 28 Z" transform="rotate(337.5 110 110)"/>
+                    </g>
+
+                    <!-- Intermediate Lotus Petals (16 alternating petals) -->
+                    <g fill="url(#chakraGoldGrad)" opacity="0.65">
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(11.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(33.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(56.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(78.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(101.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(123.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(146.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(168.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(191.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(213.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(236.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(258.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(281.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(303.75 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(326.25 110 110)"/>
+                        <path d="M110 15 Q116 28 110 38 Q104 28 110 15 Z" transform="rotate(348.75 110 110)"/>
+                    </g>
+
+                    <!-- Chakra Rim Circle -->
+                    <circle cx="110" cy="110" r="82" stroke="url(#chakraGoldGrad)" stroke-width="2" stroke-opacity="0.85"/>
+                </svg>
+
+                <!-- Secondary Slower Counter-Rotating Ornamental Ring SVG -->
+                <svg class="chakra-spin-counter absolute inset-2.5 w-[calc(100%-20px)] h-[calc(100%-20px)]"
+                     viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="100" cy="100" r="76" stroke="#f5c542" stroke-width="1.5" stroke-dasharray="5 6" stroke-opacity="0.8"/>
+                    <g fill="#fff0a6">
+                        <circle cx="100" cy="18" r="2.8"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(30 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(60 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(90 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(120 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(150 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(180 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(210 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(240 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(270 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(300 100 100)"/>
+                        <circle cx="100" cy="18" r="2.8" transform="rotate(330 100 100)"/>
+                    </g>
+                </svg>
+
+                <!-- Stationary Sacred Center Medallion with Artistic Lord Ganesha SVG -->
+                <div class="relative z-10 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-b from-[#6b1414] via-[#4a0e0e] to-[#2a0808] border-[2.5px] border-goldWarm shadow-[0_0_24px_rgba(245,197,66,0.55),inset_0_0_16px_rgba(245,197,66,0.3)] flex items-center justify-center p-2">
+                    <svg class="w-full h-full drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)]" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="श्री गणपती बाप्पा">
+                        <defs>
+                            <linearGradient id="ganeshGold" x1="20%" y1="0%" x2="80%" y2="100%">
+                                <stop offset="0%" stop-color="#fff4b8"/>
+                                <stop offset="45%" stop-color="#f5c542"/>
+                                <stop offset="85%" stop-color="#e88d14"/>
+                                <stop offset="100%" stop-color="#d46b08"/>
+                            </linearGradient>
+                            <linearGradient id="saffronGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ffb830"/>
+                                <stop offset="100%" stop-color="#ff6b00"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Sacred Crown (Mukut) 3-tiered -->
+                        <path d="M60 11 L65 20 L55 20 Z" fill="url(#ganeshGold)"/>
+                        <path d="M47 26 Q60 18 73 26 L70 32 Q60 27 50 32 Z" fill="url(#ganeshGold)"/>
+                        <path d="M43 35 Q60 28 77 35 L74 40 Q60 35 46 40 Z" fill="url(#ganeshGold)"/>
+                        <circle cx="60" cy="24" r="2.2" fill="#ff4d2e"/>
+
+                        <!-- Left & Right Ornate Ears -->
+                        <path d="M40 44 C26 42 18 52 20 65 C22 76 32 82 40 76 C35 70 34 57 40 44 Z" fill="url(#ganeshGold)" opacity="0.95"/>
+                        <path d="M35 51 C28 52 25 58 26 65 C27 70 31 72 35 70" stroke="#5b1111" stroke-width="1.8" stroke-linecap="round"/>
+
+                        <path d="M80 44 C94 42 102 52 100 65 C98 76 88 82 80 76 C85 70 86 57 80 44 Z" fill="url(#ganeshGold)" opacity="0.95"/>
+                        <path d="M85 51 C92 52 95 58 94 65 C93 70 89 72 85 70" stroke="#5b1111" stroke-width="1.8" stroke-linecap="round"/>
+
+                        <!-- Serene Head & Graceful Curved Trunk (Sond) -->
+                        <path d="M42 44 C44 37 76 37 78 44 C82 56 80 71 71 78 C66 82 65 88 68 92 C71 96 68 103 58 103 C47 103 41 96 42 89 C43 84 48 83 50 87 C51 90 54 93 58 92 C60 91 59 86 56 82 C46 74 39 60 42 44 Z" fill="url(#ganeshGold)"/>
+
+                        <!-- Sacred Tilak (Tripundra + Red Bindu) on Forehead -->
+                        <path d="M52 46 Q60 44 68 46" stroke="#b91c1c" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M53.5 50 Q60 48.5 66.5 50" stroke="#b91c1c" stroke-width="1.8" stroke-linecap="round"/>
+                        <circle cx="60" cy="54.5" r="2.3" fill="#dc2626"/>
+
+                        <!-- Calm Expressive Eyes -->
+                        <path d="M47.5 58.5 Q52 55.5 56 58.5" stroke="#4a0e0e" stroke-width="2.2" stroke-linecap="round"/>
+                        <path d="M64 58.5 Q68 55.5 72.5 58.5" stroke="#4a0e0e" stroke-width="2.2" stroke-linecap="round"/>
+                        <circle cx="52" cy="60.5" r="1.4" fill="#4a0e0e"/>
+                        <circle cx="68" cy="60.5" r="1.4" fill="#4a0e0e"/>
+
+                        <!-- Left & Right Tusks (Ekadanta) -->
+                        <path d="M49 72 Q45 77 48 80" stroke="#fff9db" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M71 72 Q74 75 72.5 77.5" stroke="#fff9db" stroke-width="2.5" stroke-linecap="round"/>
+
+                        <!-- Decorative Lotus Pedestal Accent Below -->
+                        <path d="M36 106 Q60 113 84 106 Q72 103 60 105 Q48 103 36 106 Z" fill="url(#saffronGlow)" opacity="0.9"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Proprietor Pill Directly Below Ganpati + Rotating Chakra -->
+            <div class="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/45 backdrop-blur-md border border-goldWarm/55 px-5 py-2 rounded-full text-sm sm:text-base text-goldWarm font-semibold mb-5 shadow-lg">
+                <i class="fa-solid fa-user-tie text-goldWarm"></i>
+                <span>प्रो. प्रा. माधव चोरघडे</span>
+            </div>
+
+            <!-- Grand Store Title -->
+            <h1 class="font-rozha text-5xl sm:text-6xl md:text-7xl lg:text-[82px] tracking-wide leading-tight mb-5 text-white drop-shadow-[0_10px_28px_rgba(0,0,0,0.7)]">
+                आदर्श किराणा स्टोअर्स
+            </h1>
+
+            <!-- Tagline Ribbon -->
+            <div class="flex justify-center mb-6">
+                <div class="royal-tagline-ribbon px-6 sm:px-9 py-3 rounded-2xl max-w-3xl">
+                    <p class="font-marathi text-lg sm:text-2xl font-bold text-amber-50 tracking-wide leading-snug">
+                        आमच्याकडे सर्व प्रकारचा किराणा, भुसार योग्य भावात मिळेल.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FSSAI Certified Badge & Location Sub-pill -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-9">
+                <div class="inline-flex items-center gap-2.5 bg-white/95 text-inkDark border-2 border-goldWarm px-4 py-1.5 rounded-full shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/FSSAI_logo.svg"
+                         alt="FSSAI Logo"
+                         class="h-5 w-auto object-contain"
+                         onerror="this.style.display='none'; document.getElementById('fssaiTextFallback').style.display='inline-block';">
+                    <span id="fssaiTextFallback" style="display:none;" class="num-font font-extrabold italic text-blue-900 text-sm">FSSAI</span>
+                    <span class="num-font text-xs sm:text-sm font-bold text-emeraldDeep">FSSAI Registered &amp; Certified</span>
+                </div>
+
+                <div class="inline-flex items-center gap-2 bg-black/45 backdrop-blur-md border border-amber-200/35 px-4 py-1.5 rounded-full text-xs sm:text-sm text-amber-100">
+                    <i class="fa-solid fa-location-dot text-goldWarm"></i>
+                    <span>कृषी उत्पन्न बाजार समितीच्या बाजूस, नवा मोंढा, गंगाखेड</span>
+                </div>
+            </div>
+
+            <!-- ===============================================================
+                 3 PROMINENT HERO ACTION BUTTONS IMMEDIATELY VISIBLE ON OPENING
+                 1. दुकानाचा पत्ता | 2. थेट कॉल करा | 3. बजेट कॅल्क्युलेटर
+            ================================================================ -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-4 max-w-3xl mx-auto">
+                <!-- 1. दुकानाचा पत्ता -->
+                <a href="https://maps.app.goo.gl/f6TLkmERrKUw4nBd6?g_st=ac" target="_blank" rel="noopener noreferrer"
+                   class="group inline-flex items-center justify-center gap-2.5 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white border-2 border-white/50 hover:border-goldWarm font-bold text-sm sm:text-base px-5 py-4 rounded-2xl shadow-xl hover:-translate-y-0.5 transition-all">
+                    <i class="fa-solid fa-map-location-dot text-goldWarm text-lg group-hover:scale-110 transition-transform"></i>
+                    <span>दुकानाचा पत्ता</span>
+                </a>
+
+                <!-- 2. थेट कॉल करा -->
+                <a href="tel:9881111306"
+                   class="group inline-flex items-center justify-center gap-2.5 bg-white/95 hover:bg-white text-emeraldDeep border-2 border-white font-bold text-sm sm:text-base px-5 py-4 rounded-2xl shadow-xl hover:-translate-y-0.5 transition-all">
+                    <i class="fa-solid fa-phone-volume text-emeraldRoyal text-lg group-hover:scale-110 transition-transform"></i>
+                    <span>थेट कॉल करा</span>
+                </a>
+
+                <!-- 3. बजेट कॅल्क्युलेटर (Distinctive Luxury Gold/Emerald Highlighted Button) -->
+                <button type="button" onclick="scrollToCalculator(true)"
+                        class="group inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-goldWarm via-goldLuxury to-amber-500 hover:brightness-110 text-inkDark border-2 border-amber-200 font-extrabold text-sm sm:text-base px-5 py-4 rounded-2xl shadow-[0_12px_32px_rgba(245,197,66,0.45)] hover:-translate-y-0.5 transition-all cursor-pointer">
+                    <i class="fa-solid fa-calculator text-emeraldDeep text-lg group-hover:rotate-6 transition-transform"></i>
+                    <span>बजेट कॅल्क्युलेटर</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         4. TRUST STATS SECTION ("विश्वासाचे प्रतीक")
+    ========================================================================== -->
+    <section id="trust-stats" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal-item">
+            <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-emeraldRoyal bg-emerald-100 border border-emerald-200 px-4 py-1.5 rounded-full mb-3">
+                आमची ओळख व विश्वास
+            </span>
+            <h2 class="font-rozha text-3xl sm:text-5xl text-emeraldDeep mb-3">विश्वासाचे प्रतीक</h2>
+            <div class="gold-divider w-36 mx-auto mb-4"></div>
+            <p class="text-gray-600 text-sm sm:text-base">
+                गंगाखेड शहर आणि आसपासच्या खेडेगावांतील शेकडो कुटुंबांची विश्वासू पसंती.
+            </p>
+        </div>
+
+        <div id="trustStatsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            <!-- 250+ -->
+            <div class="bg-white rounded-3xl p-7 border border-amber-900/10 shadow-[0_12px_32px_-12px_rgba(11,61,36,0.12)] hover:-translate-y-1 transition-all text-center relative overflow-hidden reveal-item">
+                <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-emeraldDeep via-growwGreen to-goldWarm"></div>
+                <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emeraldRoyal flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                </div>
+                <div class="num-font text-4xl sm:text-5xl font-extrabold text-emeraldDeep mb-2">
+                    <span class="trust-counter" data-target="250" data-suffix="+">250+</span>
+                </div>
+                <h3 class="font-marathi text-lg sm:text-xl font-bold text-inkDark">खेडेगावांतील समाधानी कुटुंबे</h3>
+            </div>
+
+            <!-- 50+ -->
+            <div class="bg-white rounded-3xl p-7 border border-amber-900/10 shadow-[0_12px_32px_-12px_rgba(11,61,36,0.12)] hover:-translate-y-1 transition-all text-center relative overflow-hidden reveal-item">
+                <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-goldLuxury via-goldWarm to-emeraldRoyal"></div>
+                <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-amber-50 border border-amber-200 text-goldLuxury flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+                <div class="num-font text-4xl sm:text-5xl font-extrabold text-goldLuxury mb-2">
+                    <span class="trust-counter" data-target="50" data-suffix="+">50+</span>
+                </div>
+                <h3 class="font-marathi text-lg sm:text-xl font-bold text-inkDark">गंगाखेडमधील समाधानी कुटुंबे</h3>
+            </div>
+
+            <!-- 100% -->
+            <div class="bg-white rounded-3xl p-7 border border-amber-900/10 shadow-[0_12px_32px_-12px_rgba(11,61,36,0.12)] hover:-translate-y-1 transition-all text-center relative overflow-hidden reveal-item">
+                <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-emeraldDeep via-growwGreen to-goldWarm"></div>
+                <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emeraldRoyal flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div class="num-font text-4xl sm:text-5xl font-extrabold text-emeraldDeep mb-2">
+                    <span class="trust-counter" data-target="100" data-suffix="%">100%</span>
+                </div>
+                <h3 class="font-marathi text-lg sm:text-xl font-bold text-inkDark">उत्तम दर्जा व योग्य भाव</h3>
+            </div>
+
+            <!-- FSSAI -->
+            <div class="bg-white rounded-3xl p-7 border border-amber-900/10 shadow-[0_12px_32px_-12px_rgba(11,61,36,0.12)] hover:-translate-y-1 transition-all text-center relative overflow-hidden reveal-item">
+                <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-goldLuxury via-goldWarm to-emeraldRoyal"></div>
+                <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-amber-50 border border-amber-200 text-goldLuxury flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="num-font text-4xl sm:text-5xl font-extrabold text-emeraldDeep mb-2 tracking-tight">FSSAI</div>
+                <h3 class="font-marathi text-lg sm:text-xl font-bold text-inkDark">प्रमाणित किराणा स्टोअर्स</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         5. UPGRADED ULTRA-SMOOTH MODERN BUDGET CALCULATOR (#budget-calculator)
+            Groww SIP-Calculator Inspired Light Fintech Card
+    ========================================================================== -->
+    <section id="budget-calculator" class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+        <div class="text-center max-w-2xl mx-auto mb-10 reveal-item">
+            <span class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-growwDeep bg-growwMint border border-growwGreen/35 px-4 py-1.5 rounded-full mb-3">
+                <i class="fa-solid fa-calculator text-growwGreen"></i>
+                <span>सोपे व अचूक बजेट साधन</span>
+            </span>
+            <h2 class="font-rozha text-3xl sm:text-5xl text-emeraldDeep mb-3">
+                मासिक किराणा बजेट कॅल्क्युलेटर
+            </h2>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                साध्या व सोप्या पद्धतीने तुमच्या कुटुंबाचा महिन्याचा किराणा खर्च तपासा
+            </p>
+        </div>
+
+        <!-- Clean White Groww-Style Fintech Calculator Card -->
+        <div id="calculatorMainCard"
+             class="bg-white rounded-[28px] border border-gray-200 shadow-[0_18px_50px_-16px_rgba(11,61,36,0.12)] p-6 sm:p-9 lg:p-11 transition-all reveal-item">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-9 lg:gap-12 items-start">
+
+                <!-- LEFT SIDE: Ultra-Smooth Sliders + Tactile '-' & '+' Buttons -->
+                <div class="lg:col-span-7 space-y-7">
+
+                    <!-- Input 1: घरातील सदस्य संख्या (1 to 12, default 4) -->
+                    <div class="space-y-3">
+                        <div class="flex flex-wrap items-center justify-between gap-3">
+                            <label for="sliderMembers" class="text-base sm:text-lg font-bold text-inkDark flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-xl bg-growwMint text-growwDeep flex items-center justify-center text-sm">
+                                    <i class="fa-solid fa-users"></i>
+                                </span>
+                                <span>घरातील सदस्य संख्या</span>
+                            </label>
+
+                            <!-- Tactile - / Value Pill / + Controls -->
+                            <div class="inline-flex items-center gap-1.5 bg-growwMint/80 border border-growwGreen/30 rounded-xl p-1">
+                                <button type="button" onclick="stepSlider('sliderMembers', -1)" aria-label="सदस्य कमी करा"
+                                        class="w-9 h-9 rounded-lg bg-white hover:bg-growwGreen hover:text-white text-growwDeep font-bold shadow-xs transition-all active:scale-90 cursor-pointer flex items-center justify-center">
+                                    <i class="fa-solid fa-minus text-xs"></i>
+                                </button>
+                                <span id="pillMembers" class="num-font text-sm sm:text-base font-bold text-growwDeep min-w-[82px] text-center px-2">4 सदस्य</span>
+                                <button type="button" onclick="stepSlider('sliderMembers', 1)" aria-label="सदस्य वाढवा"
+                                        class="w-9 h-9 rounded-lg bg-white hover:bg-growwGreen hover:text-white text-growwDeep font-bold shadow-xs transition-all active:scale-90 cursor-pointer flex items-center justify-center">
+                                    <i class="fa-solid fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <input id="sliderMembers" type="range" min="1" max="12" value="4" step="1"
+                               oninput="handleSliderMove()" class="smooth-slider">
+                        <div class="flex justify-between num-font text-[11px] font-medium text-gray-400">
+                            <span>1 सदस्य</span>
+                            <span>6 सदस्य</span>
+                            <span>12 सदस्य</span>
+                        </div>
+                    </div>
+
+                    <!-- Input 2: महिनाभराचे धान्य व डाळी (5 to 60 किलो, default 20) -->
+                    <div class="space-y-3">
+                        <div class="flex flex-wrap items-center justify-between gap-3">
+                            <label for="sliderGrains" class="text-base sm:text-lg font-bold text-inkDark flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-xl bg-growwMint text-growwDeep flex items-center justify-center text-sm">
+                                    <i class="fa-solid fa-wheat-awn"></i>
+                                </span>
+                                <span>महिनाभराचे धान्य व डाळी</span>
+                            </label>
+
+                            <div class="inline-flex items-center gap-1.5 bg-growwMint/80 border border-growwGreen/30 rounded-xl p-1">
+                                <button type="button" onclick="stepSlider('sliderGrains', -1)" aria-label="धान्य कमी करा"
+                                        class="w-9 h-9 rounded-lg bg-white hover:bg-growwGreen hover:text-white text-growwDeep font-bold shadow-xs transition-all active:scale-90 cursor-pointer flex items-center justify-center">
+                                    <i class="fa-solid fa-minus text-xs"></i>
+                                </button>
+                                <span id="pillGrains" class="num-font text-sm sm:text-base font-bold text-growwDeep min-w-[82px] text-center px-2">20 किलो</span>
+                                <button type="button" onclick="stepSlider('sliderGrains', 1)" aria-label="धान्य वाढवा"
+                                        class="w-9 h-9 rounded-lg bg-white hover:bg-growwGreen hover:text-white text-growwDeep font-bold shadow-xs transition-all active:scale-90 cursor-pointer flex items-center justify-center">
+                                    <i class="fa-solid fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <input id="sliderGrains" type="range" min="5" max="60" value="20" step="1"
+                               oninput="handleSliderMove()" class="smooth-slider">
+                        <div class="flex justify-between num-font text-[11px] font-medium text-gray-400">
+                            <span>5 किलो</span>
+                            <span>30 किलो</span>
+                            <span>60 किलो</span>
+                        </div>
+                    </div>
+
+                    <!-- Input 3: खाद्यतेल व गाईचे तूप (1 to 15 लिटर, default 4) -->
+                    <div class="space-y-3">
+                        <div class="flex flex-wrap items-center justify-between gap-3">
+                            <label for="sliderOil" class="text-base sm:text-lg font-bold text-inkDark flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-xl bg-amber-50 text-goldLuxury flex items-center justify-center text-sm border border-amber-200">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </span>
+                                <span>खाद्यतेल व गाईचे तूप</span>
+                            </label>
+
+                            <div class="inline-flex items-center gap-1.5 bg-amber-50 border border-goldLuxury/35 rounded-xl p-1">
+                                <button type="button" onclick="stepSlider('sliderOil', -1)" aria-label="तेल कमी करा"
+                                        class="w-9 h-9 rounded-lg bg-white hover:bg-goldLuxury hover:text-white text-goldLuxury font-bold shadow-xs transition-all active:scale-90 cursor-pointer flex items-center justify-center">
+                                    <i class="fa-solid fa-minus text-xs"></i>
+                                </button>
+                                <span id="pillOil" class="num-font text-sm sm:text-base font-bold text-amber-800 min-w-[82px] text-center px-2">4 लिटर</span>
+                                <button type="button" onclick="stepSlider('sliderOil', 1)" aria-label="तेल वाढवा"
+                                        class="w-9 h-9 rounded-lg bg-white hover:bg-goldLuxury hover:text-white text-goldLuxury font-bold shadow-xs transition-all active:scale-90 cursor-pointer flex items-center justify-center">
+                                    <i class="fa-solid fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <input id="sliderOil" type="range" min="1" max="15" value="4" step="1"
+                               oninput="handleSliderMove()" class="smooth-slider">
+                        <div class="flex justify-between num-font text-[11px] font-medium text-gray-400">
+                            <span>1 लिटर</span>
+                            <span>8 लिटर</span>
+                            <span>15 लिटर</span>
+                        </div>
+                    </div>
+
+                    <!-- Input 4: Simple 3-Pill Selector for इतर किराणा व मसाले -->
+                    <div class="pt-1">
+                        <p class="text-base sm:text-lg font-bold text-inkDark mb-3 flex items-center gap-2">
+                            <span class="w-8 h-8 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center text-sm border border-sky-200">
+                                <i class="fa-solid fa-pepper-hot"></i>
+                            </span>
+                            <span>इतर किराणा व मसाले</span>
+                        </p>
+                        <div class="grid grid-cols-3 gap-2.5">
+                            <button type="button" onclick="selectExtraLevel('limited', this)"
+                                    class="extra-pill py-3 px-3 rounded-xl text-sm sm:text-base font-semibold border border-gray-200 bg-gray-50 text-gray-700 hover:border-growwGreen transition-all cursor-pointer">
+                                मर्यादित
+                            </button>
+                            <button type="button" onclick="selectExtraLevel('regular', this)"
+                                    class="extra-pill py-3 px-3 rounded-xl text-sm sm:text-base font-bold border-2 border-growwGreen bg-growwMint text-growwDeep shadow-xs transition-all cursor-pointer">
+                                नियमित
+                            </button>
+                            <button type="button" onclick="selectExtraLevel('abundant', this)"
+                                    class="extra-pill py-3 px-3 rounded-xl text-sm sm:text-base font-semibold border border-gray-200 bg-gray-50 text-gray-700 hover:border-growwGreen transition-all cursor-pointer">
+                                भरपूर
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Live Cue + Prominent Smooth Check Budget Button -->
+                    <div class="pt-2 space-y-2.5">
+                        <div id="liveRecalcCue" class="hidden items-center justify-center gap-2 text-xs font-semibold text-growwDeep bg-growwMint/80 border border-growwGreen/30 rounded-xl py-2 px-3">
+                            <i class="fa-solid fa-sparkles text-goldLuxury"></i>
+                            <span>तुमचे आकडे अपडेट झाले आहेत — पूर्ण चार्टसाठी खालील बटण दाबा!</span>
+                        </div>
+
+                        <button type="button" onclick="runAnimatedBudgetCheck()"
+                                class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-growwGreen to-growwDeep hover:brightness-105 active:scale-[0.985] text-white font-bold text-base sm:text-lg shadow-[0_12px_28px_-6px_rgba(0,179,134,0.52)] transition-all cursor-pointer flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span>बजेट तपासा (Check Budget)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: Groww-Style Donut Chart, Breakdown & Dual-Ring Loader -->
+                <div id="calcResultCard"
+                     class="lg:col-span-5 bg-[#fbfcfa] rounded-3xl border border-gray-200 p-6 sm:p-7 relative min-h-[430px] flex flex-col justify-between">
+
+                    <!-- Spinning Dual-Ring Golden-Emerald Loader Overlay (~850ms) -->
+                    <div id="budgetLoaderOverlay"
+                         class="hidden absolute inset-0 z-20 rounded-3xl bg-white/96 backdrop-blur-sm flex-col items-center justify-center text-center p-6">
+                        <div class="relative w-28 h-28 mb-5 flex items-center justify-center">
+                            <svg class="w-full h-full" viewBox="0 0 110 110" fill="none" aria-hidden="true">
+                                <circle cx="55" cy="55" r="46" stroke="#e8f9f4" stroke-width="7"/>
+                                <g class="loader-outer-arc">
+                                    <circle cx="55" cy="55" r="46" stroke="#00b386" stroke-width="7" stroke-linecap="round" stroke-dasharray="105 190"/>
+                                </g>
+                                <circle cx="55" cy="55" r="33" stroke="#fef3c7" stroke-width="5"/>
+                                <g class="loader-inner-arc">
+                                    <circle cx="55" cy="55" r="33" stroke="#d4a017" stroke-width="5.5" stroke-linecap="round" stroke-dasharray="72 140"/>
+                                </g>
+                            </svg>
+                            <span class="absolute num-font font-extrabold text-2xl text-emeraldDeep">₹</span>
+                        </div>
+                        <p class="font-marathi text-lg font-bold text-emeraldDeep mb-1">तुमचे मासिक बजेट मोजत आहोत...</p>
+                        <p class="text-xs text-gray-500">कृपया एक क्षण थांबा</p>
+                    </div>
+
+                    <!-- Result Panel Content -->
+                    <div id="budgetResultInner" class="flex flex-col justify-between h-full">
+                        <!-- Top Clean Legend -->
+                        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mb-5 text-xs font-semibold text-gray-700">
+                            <span class="inline-flex items-center gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-[#00b386]"></span>
+                                <span>धान्य व डाळी</span>
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-[#d4a017]"></span>
+                                <span>तेल व गाईचे तूप</span>
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-[#0284c7]"></span>
+                                <span>मसाले व इतर</span>
+                            </span>
+                        </div>
+
+                        <!-- Groww-Style Smooth Animated SVG Donut Chart -->
+                        <div class="relative w-52 h-52 mx-auto mb-5 flex items-center justify-center">
+                            <svg class="w-full h-full -rotate-90" viewBox="0 0 180 180" aria-label="मासिक किराणा बजेट चार्ट">
+                                <circle cx="90" cy="90" r="68" fill="none" stroke="#edf2f0" stroke-width="22"/>
+                                <!-- Segment 1: धान्य व डाळी (Emerald) -->
+                                <circle id="donutArcGrains" cx="90" cy="90" r="68" fill="none" stroke="#00b386" stroke-width="22"
+                                        stroke-dasharray="0 427.26" stroke-dashoffset="0" class="donut-arc"/>
+                                <!-- Segment 2: खाद्यतेल व गाईचे तूप (Gold) -->
+                                <circle id="donutArcOil" cx="90" cy="90" r="68" fill="none" stroke="#d4a017" stroke-width="22"
+                                        stroke-dasharray="0 427.26" stroke-dashoffset="0" class="donut-arc"/>
+                                <!-- Segment 3: मसाले, साखर, चहा व इतर किराणा (Teal/Blue) -->
+                                <circle id="donutArcOthers" cx="90" cy="90" r="68" fill="none" stroke="#0284c7" stroke-width="22"
+                                        stroke-dasharray="0 427.26" stroke-dashoffset="0" class="donut-arc"/>
+                            </svg>
+
+                            <!-- Center Total inside Donut -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+                                <span class="text-[11px] font-semibold text-gray-500">मासिक अंदाज</span>
+                                <span id="donutTotalValue" class="num-font text-2xl font-extrabold text-emeraldDeep tracking-tight">₹5,150</span>
+                            </div>
+                        </div>
+
+                        <!-- Realistic Monthly Range Pill -->
+                        <div class="text-center mb-5">
+                            <span class="inline-block bg-growwMint border border-growwGreen/30 text-growwDeep text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full">
+                                अंदाजे रेंज: <span id="budgetRangeText" class="num-font">₹4,750 ते ₹5,600</span>
+                            </span>
+                        </div>
+
+                        <!-- Exact Rupee & Percentage Breakdown -->
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-gray-700 flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#00b386] shrink-0"></span>
+                                    <span>धान्य व डाळी</span>
+                                </span>
+                                <span class="num-font font-bold text-inkDark">
+                                    <span id="valGrains">₹1,600</span>
+                                    <span id="pctGrains" class="text-xs font-semibold text-gray-500 ml-1">(31%)</span>
+                                </span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-gray-700 flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#d4a017] shrink-0"></span>
+                                    <span>खाद्यतेल व गाईचे तूप</span>
+                                </span>
+                                <span class="num-font font-bold text-inkDark">
+                                    <span id="valOil">₹950</span>
+                                    <span id="pctOil" class="text-xs font-semibold text-gray-500 ml-1">(18%)</span>
+                                </span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-gray-700 flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#0284c7] shrink-0"></span>
+                                    <span>मसाले, साखर, चहा व इतर किराणा</span>
+                                </span>
+                                <span class="num-font font-bold text-inkDark">
+                                    <span id="valOthers">₹2,600</span>
+                                    <span id="pctOthers" class="text-xs font-semibold text-gray-500 ml-1">(51%)</span>
+                                </span>
+                            </div>
+
+                            <hr class="border-gray-200 my-2">
+
+                            <div class="flex items-center justify-between gap-2 pt-0.5">
+                                <span class="font-bold text-emeraldDeep text-base">एकूण मासिक बजेट</span>
+                                <span id="valGrandTotal" class="num-font text-2xl sm:text-3xl font-extrabold text-growwGreen">₹5,150</span>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 pt-3 border-t border-gray-200/80 text-[11px] text-gray-500 leading-relaxed">
+                            टीप: हा फक्त अंदाजे मासिक खर्च आहे. प्रत्यक्ष बाजारभाव व ब्रँडनुसार थोडा बदल होऊ शकतो.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         6. STORE CATEGORIES ("किराणा व भुसार विभाग")
+            3 Purely Informational Showcase Cards (NO Online/WhatsApp Order Buttons)
+    ========================================================================== -->
+    <section id="categories" class="py-16 sm:py-24 bg-white border-y border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 reveal-item">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-goldLuxury bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full mb-3">
+                    थेट दुकानात उपलब्ध
+                </span>
+                <h2 class="font-rozha text-3xl sm:text-5xl text-emeraldDeep mb-3">
+                    किराणा व भुसार विभाग
+                </h2>
+                <div class="gold-divider w-36 mx-auto mb-4"></div>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    खात्रीशीर गुणवत्ता, चोख वजन आणि परवडणारे दर — सर्व किराणा साहित्य एकाच छताखाली.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Card 1: धान्य व कडधान्ये -->
+                <article class="bg-ivory rounded-3xl p-7 sm:p-8 border border-amber-900/10 hover:border-goldLuxury/60 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1.5 flex flex-col justify-between reveal-item">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-emeraldDeep text-goldWarm flex items-center justify-center text-2xl shadow-md mb-6">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="font-rozha text-2xl sm:text-3xl text-emeraldDeep mb-3">धान्य व कडधान्ये</h3>
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                            उत्तम प्रतीचे गहू, तांदूळ, तूर-मूग डाळी, मटकी, हरभरा व सर्व भुसार माल.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-amber-900/10 flex items-center gap-2 text-xs font-bold text-emeraldRoyal">
+                        <i class="fa-solid fa-circle-check text-growwGreen"></i>
+                        <span>निवडक व स्वच्छ भुसार माल</span>
+                    </div>
+                </article>
+
+                <!-- Card 2: खाद्यतेल व गाईचे तूप -->
+                <article class="bg-ivory rounded-3xl p-7 sm:p-8 border border-amber-900/10 hover:border-goldLuxury/60 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1.5 flex flex-col justify-between reveal-item">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-goldWarm to-goldLuxury text-emeraldDeep flex items-center justify-center text-2xl shadow-md mb-6">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h3 class="font-rozha text-2xl sm:text-3xl text-emeraldDeep mb-3">खाद्यतेल व गाईचे तूप</h3>
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                            शुद्ध शेंगदाणा तेल, सोयाबीन तेल, सनफ्लॉवर तेल आणि अस्सल <strong class="text-emeraldDeep">गाईचे तूप</strong>.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-amber-900/10 flex items-center gap-2 text-xs font-bold text-goldLuxury">
+                        <i class="fa-solid fa-circle-check text-goldLuxury"></i>
+                        <span>किरकोळ व १५ किलो डबे उपलब्ध</span>
+                    </div>
+                </article>
+
+                <!-- Card 3: दैनंदिन वापराच्या वस्तू व मसाले -->
+                <article class="bg-ivory rounded-3xl p-7 sm:p-8 border border-amber-900/10 hover:border-goldLuxury/60 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1.5 flex flex-col justify-between reveal-item">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-emeraldRoyal text-amber-200 flex items-center justify-center text-2xl shadow-md mb-6">
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <h3 class="font-rozha text-2xl sm:text-3xl text-emeraldDeep mb-3">दैनंदिन वापराच्या वस्तू व मसाले</h3>
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                            साखर, चहा पावडर, खडे मसाले, साबण व गृहपयोगी सर्व साहित्य योग्य भावात.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-amber-900/10 flex items-center gap-2 text-xs font-bold text-emeraldRoyal">
+                        <i class="fa-solid fa-circle-check text-growwGreen"></i>
+                        <span>सर्व नामांकित ब्रँड्स उपलब्ध</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         7. ROYAL PARALLAX STRIP (66252.jpg) + STORE PHOTOS GALLERY ("आमच्या दुकानाची झलक")
+    ========================================================================== -->
+    <section class="parallax-band py-20 sm:py-24 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 reveal-item">
+            <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-goldWarm/45 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-amber-200 mb-5">
+                <i class="fa-solid fa-award text-goldWarm"></i>
+                <span>आदर्श किराणा स्टोअर्स • नवा मोंढा, गंगाखेड</span>
+            </span>
+            <h2 class="font-marathi text-2xl sm:text-4xl font-bold leading-snug mb-5 drop-shadow-md">
+                “दर्जेदार धान्य, अस्सल गाईचे तूप, चोख माप आणि प्रत्येक कुटुंबाला परवडणारे योग्य भाव — हीच आमची खरी ओळख!”
+            </h2>
+            <p class="text-amber-200 text-sm sm:text-base font-semibold">
+                — प्रो. प्रा. माधव चोरघडे
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal-item">
+            <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-goldLuxury bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full mb-3">
+                फोटो गॅलरी
+            </span>
+            <h2 class="font-rozha text-3xl sm:text-5xl text-emeraldDeep mb-3">आमच्या दुकानाची झलक</h2>
+            <div class="gold-divider w-36 mx-auto mb-4"></div>
+            <p class="text-gray-600 text-sm sm:text-base">
+                स्वच्छ मांडणी व भरपूर साठ्याने सुसज्ज आमचे दुकान. फोटो मोठा पाहण्यासाठी क्लिक करा.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 sm:gap-9">
+            <!-- Photo 1: 66251.jpg -->
+            <figure onclick="openPhotoLightbox('66251.jpg', 'निवडक धान्य व भुसार विभाग — आदर्श किराणा स्टोअर्स, गंगाखेड')"
+                    class="group relative rounded-3xl overflow-hidden border-2 border-goldWarm/60 bg-emeraldDeep shadow-xl cursor-pointer reveal-item">
+                <div class="aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-emeraldDeep to-emeraldRoyal relative">
+                    <img src="66251.jpg"
+                         alt="धान्य व भुसार विभाग - आदर्श किराणा स्टोअर्स"
+                         onerror="this.src='https://placehold.co/800x600/0b3d24/f5c542?text=Adarsh+Kirana+Stores+Grains'"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                    <div class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 text-emeraldDeep flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <figcaption class="absolute bottom-0 inset-x-0 p-6 text-white">
+                    <span class="text-[11px] font-bold uppercase tracking-widest text-goldWarm">आदर्श किराणा स्टोअर्स</span>
+                    <h3 class="font-rozha text-2xl sm:text-3xl mb-1">धान्य व भुसार विभाग</h3>
+                    <p class="text-gray-200 text-xs sm:text-sm">स्वच्छ गहू, तांदूळ, डाळी व विविध कडधान्यांचा भरपूर साठा.</p>
+                </figcaption>
+            </figure>
+
+            <!-- Photo 2: 66252.jpg -->
+            <figure onclick="openPhotoLightbox('66252.jpg', 'सुसज्ज किराणा व दैनंदिन साहित्य — आदर्श किराणा स्टोअर्स, गंगाखेड')"
+                    class="group relative rounded-3xl overflow-hidden border-2 border-goldWarm/60 bg-emeraldDeep shadow-xl cursor-pointer reveal-item">
+                <div class="aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-emeraldDeep to-emeraldRoyal relative">
+                    <img src="66252.jpg"
+                         alt="सुसज्ज किराणा व दैनंदिन साहित्य - आदर्श किराणा स्टोअर्स"
+                         onerror="this.src='https://placehold.co/800x600/0b3d24/f5c542?text=Adarsh+Kirana+Stores+Shelves'"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                    <div class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 text-emeraldDeep flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <figcaption class="absolute bottom-0 inset-x-0 p-6 text-white">
+                    <span class="text-[11px] font-bold uppercase tracking-widest text-goldWarm">आदर्श किराणा स्टोअर्स</span>
+                    <h3 class="font-rozha text-2xl sm:text-3xl mb-1">सुसज्ज किराणा व दैनंदिन साहित्य</h3>
+                    <p class="text-gray-200 text-xs sm:text-sm">खाद्यतेल, गाईचे तूप, मसाले व घरगुती वस्तूंची नीटनेटकी मांडणी.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         8. "तुम्ही तुमची यादी तयार करा" (OFFLINE GROCERY LIST MAKER + WHATSAPP & COPY)
+    ========================================================================== -->
+    <section id="grocery-list" class="py-16 sm:py-24 bg-white border-y border-amber-900/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 reveal-item">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-growwDeep bg-growwMint border border-growwGreen/35 px-4 py-1.5 rounded-full mb-3">
+                    सोपी किराणा यादी
+                </span>
+                <h2 class="font-rozha text-3xl sm:text-5xl text-emeraldDeep mb-3">
+                    तुम्ही तुमची यादी तयार करा
+                </h2>
+                <div class="gold-divider w-36 mx-auto mb-4"></div>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    घरबसल्या तुमच्या किराणा वस्तूंची यादी बनवा, सेव्ह ठेवा किंवा एका क्लिकवर WhatsApp वर पाठवा.
+                </p>
+            </div>
+
+            <div class="bg-ivory rounded-3xl border border-amber-900/15 shadow-lg p-6 sm:p-8 md:p-10 reveal-item">
+                <!-- One-Tap Quick-Add Marathi Chips -->
+                <div class="mb-7">
+                    <p class="text-xs sm:text-sm font-bold text-emeraldDeep mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-bolt text-goldLuxury"></i>
+                        <span>झटपट वस्तू निवडा (एका क्लिकवर यादीत जोडा):</span>
+                    </p>
+                    <div class="flex flex-wrap gap-2.5">
+                        <button type="button" onclick="quickAddGrocery('तांदूळ (5 किलो)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ तांदूळ (5 किलो)</button>
+                        <button type="button" onclick="quickAddGrocery('गहू (10 किलो)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ गहू (10 किलो)</button>
+                        <button type="button" onclick="quickAddGrocery('तूर डाळ (2 किलो)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ तूर डाळ (2 किलो)</button>
+                        <button type="button" onclick="quickAddGrocery('शेंगदाणा तेल (2 लिटर)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ शेंगदाणा तेल (2 लिटर)</button>
+                        <button type="button" onclick="quickAddGrocery('गाईचे तूप (1 किलो)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ गाईचे तूप (1 किलो)</button>
+                        <button type="button" onclick="quickAddGrocery('साखर (3 किलो)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ साखर (3 किलो)</button>
+                        <button type="button" onclick="quickAddGrocery('चहा पावडर (500 ग्रॅम)')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ चहा पावडर (500 ग्रॅम)</button>
+                        <button type="button" onclick="quickAddGrocery('मसाले व मीठ')" class="px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-emeraldDeep hover:text-white border border-emeraldDeep/20 text-emeraldDeep shadow-xs transition-all cursor-pointer">+ मसाले व मीठ</button>
+                    </div>
+                </div>
+
+                <!-- Custom Item + Quantity Form -->
+                <form onsubmit="handleCustomGrocerySubmit(event)" class="grid grid-cols-1 sm:grid-cols-12 gap-3 mb-7">
+                    <div class="sm:col-span-6">
+                        <label for="itemNameInput" class="sr-only">वस्तूचे नाव</label>
+                        <input id="itemNameInput" type="text" required placeholder="वस्तूचे नाव (उदा. हरभरा डाळ)"
+                               class="w-full bg-white border border-gray-300 focus:border-growwGreen focus:ring-2 focus:ring-growwGreen/20 rounded-xl px-4 py-3.5 text-sm sm:text-base text-inkDark placeholder-gray-400 outline-none">
+                    </div>
+                    <div class="sm:col-span-3">
+                        <label for="itemQtyInput" class="sr-only">प्रमाण</label>
+                        <input id="itemQtyInput" type="text" placeholder="प्रमाण (उदा. 1 किलो)"
+                               class="w-full bg-white border border-gray-300 focus:border-growwGreen focus:ring-2 focus:ring-growwGreen/20 rounded-xl px-4 py-3.5 text-sm sm:text-base text-inkDark placeholder-gray-400 outline-none">
+                    </div>
+                    <div class="sm:col-span-3">
+                        <button type="submit"
+                                class="w-full h-full bg-emeraldDeep hover:bg-emeraldRoyal text-white font-bold text-sm sm:text-base px-5 py-3.5 rounded-xl shadow-md transition-all cursor-pointer inline-flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>यादीत टाका</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- List Header -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-4 border-b border-gray-200">
+                    <div class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-clipboard-list text-emeraldRoyal text-lg"></i>
+                        <h3 class="font-rozha text-2xl text-emeraldDeep">तुमची तयार यादी</h3>
+                        <span id="groceryCountBadge" class="num-font text-xs font-bold bg-growwMint text-growwDeep px-3 py-1 rounded-full">0 वस्तू</span>
+                    </div>
+
+                    <button type="button" onclick="clearAllGroceryItems()"
+                            class="text-xs sm:text-sm font-semibold text-rose-700 hover:bg-rose-50 border border-rose-200 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-trash-can text-xs"></i>
+                        <span>यादी साफ करा</span>
+                    </button>
+                </div>
+
+                <!-- Dynamic List -->
+                <ul id="groceryListUl" class="space-y-2.5 mb-8 min-h-[82px]"></ul>
+
+                <!-- Action Buttons: Send to WhatsApp + Copy List -->
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 pt-4 border-t border-gray-200">
+                    <button type="button" onclick="shareGroceryListWhatsApp()"
+                            class="sm:col-span-8 py-4 px-6 rounded-2xl bg-[#25D366] hover:bg-[#1EB954] text-white font-bold text-base sm:text-lg shadow-[0_12px_28px_-6px_rgba(37,211,102,0.48)] hover:-translate-y-0.5 transition-all cursor-pointer flex items-center justify-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>ही यादी WhatsApp वर पाठवा</span>
+                    </button>
+
+                    <button type="button" onclick="copyGroceryListToClipboard()"
+                            class="sm:col-span-4 py-4 px-5 rounded-2xl bg-white hover:bg-emeraldDeep hover:text-white text-emeraldDeep border-2 border-emeraldDeep/25 font-bold text-sm sm:text-base shadow-xs transition-all cursor-pointer flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-copy text-lg"></i>
+                        <span>यादी कॉपी करा</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         9. CONTACT & ADDRESS SECTION ("संपर्क व पत्ता")
+    ========================================================================== -->
+    <section id="contact" class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal-item">
+            <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-emeraldRoyal bg-emerald-100 border border-emerald-200 px-4 py-1.5 rounded-full mb-3">
+                आमच्या दुकानाला अवश्य भेट द्या
+            </span>
+            <h2 class="font-rozha text-3xl sm:text-5xl text-emeraldDeep mb-3">संपर्क व पत्ता</h2>
+            <div class="gold-divider w-36 mx-auto"></div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-amber-900/15 shadow-xl overflow-hidden reveal-item">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+                <!-- Left Details -->
+                <div class="lg:col-span-7 p-7 sm:p-10 md:p-12 space-y-6">
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-goldLuxury mb-1">प्रो. प्रा. (Proprietor)</p>
+                        <h3 class="font-rozha text-3xl sm:text-4xl text-emeraldDeep">प्रो. प्रा. माधव चोरघडे</h3>
+                    </div>
+
+                    <!-- Clickable Phone Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                        <a href="tel:9881543739"
+                           class="flex items-center gap-3.5 bg-ivory hover:bg-emeraldDeep hover:text-white border border-amber-900/15 rounded-2xl p-4 transition-all group">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-100 group-hover:bg-white/15 text-emeraldDeep group-hover:text-goldWarm flex items-center justify-center shrink-0 transition-colors">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[11px] text-gray-500 group-hover:text-emerald-100">मोबाईल क्रमांक १</span>
+                                <span class="num-font text-base sm:text-lg font-bold">9881543739</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:9881111306"
+                           class="flex items-center gap-3.5 bg-ivory hover:bg-emeraldDeep hover:text-white border border-amber-900/15 rounded-2xl p-4 transition-all group">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-100 group-hover:bg-white/15 text-emeraldDeep group-hover:text-goldWarm flex items-center justify-center shrink-0 transition-colors">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[11px] text-gray-500 group-hover:text-emerald-100">मोबाईल क्रमांक २</span>
+                                <span class="num-font text-base sm:text-lg font-bold">9881111306</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Email, Address & Timing -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-ivory border border-amber-900/15 text-goldLuxury flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-xs text-gray-500 font-medium">ईमेल पत्ता</span>
+                                <a href="mailto:madhavchorghade.98@gmail.com" class="num-font text-sm sm:text-base font-semibold text-inkDark hover:text-emeraldRoyal break-all transition-colors">
+                                    madhavchorghade.98@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-ivory border border-amber-900/15 text-goldLuxury flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-gray-500 font-medium">पत्ता</span>
+                                <p class="text-base font-bold text-inkDark leading-relaxed">
+                                    कृषी उत्पन्न बाजार समितीच्या बाजूस, नवा मोंढा, गंगाखेड
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-growwMint/70 border border-growwGreen/30 rounded-2xl p-4">
+                            <div class="w-10 h-10 rounded-xl bg-emeraldDeep text-goldWarm flex items-center justify-center shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-bold text-growwDeep">दुकानाची वेळ</span>
+                                <p class="text-sm sm:text-base font-bold text-inkDark">सकाळी ८:३० ते रात्री ९:०० — दररोज सुरू</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Map & Direct Call Card -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-emeraldDeep via-[#09321e] to-[#061e12] p-8 sm:p-10 flex flex-col justify-center text-center text-white relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-15 pointer-events-none"
+                         style="background-image: linear-gradient(to right, rgba(245,197,66,0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(245,197,66,0.35) 1px, transparent 1px); background-size: 30px 30px;">
+                    </div>
+                    <div class="relative z-10 space-y-5">
+                        <div class="w-20 h-20 mx-auto rounded-full bg-goldWarm text-emeraldDeep flex items-center justify-center text-3xl shadow-[0_0_28px_rgba(245,197,66,0.5)]">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="font-rozha text-3xl text-white">आदर्श किराणा स्टोअर्स</h3>
+                        <p class="text-emerald-100 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">
+                            कृषी उत्पन्न बाजार समितीच्या बाजूस, नवा मोंढा, गंगाखेड
+                        </p>
+
+                        <div class="space-y-3 pt-2">
+                            <a href="https://maps.app.goo.gl/f6TLkmERrKUw4nBd6?g_st=ac" target="_blank" rel="noopener noreferrer"
+                               class="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-goldWarm to-goldLuxury hover:brightness-110 text-inkDark font-bold text-base py-4 px-6 rounded-2xl shadow-xl transition-all hover:-translate-y-0.5">
+                                <i class="fa-solid fa-map-location-dot text-lg"></i>
+                                <span>Google Map वर रस्ता पहा</span>
+                            </a>
+
+                            <a href="tel:9881111306"
+                               class="w-full inline-flex items-center justify-center gap-2.5 bg-white/15 hover:bg-white/25 border border-white/40 text-white font-bold text-base py-3.5 px-6 rounded-2xl transition-all">
+                                <i class="fa-solid fa-phone-volume text-goldWarm"></i>
+                                <span>थेट कॉल करा (9881111306)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         10. ROYAL FOOTER
+    ========================================================================== -->
+    <footer class="bg-emeraldDeep text-emerald-100 border-t-4 border-goldWarm pt-12 pb-24 sm:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+            <p class="font-yatra text-goldWarm text-base mb-2">|| श्री गणेशाय नमः ||</p>
+            <h3 class="font-rozha text-2xl sm:text-3xl text-white mb-2">आदर्श किराणा स्टोअर्स</h3>
+            <p class="text-xs sm:text-sm text-emerald-200/80 mb-6">
+                कृषी उत्पन्न बाजार समितीच्या बाजूस, नवा मोंढा, गंगाखेड • प्रो. प्रा. माधव चोरघडे
+            </p>
+            <div class="gold-divider max-w-md mx-auto mb-5 opacity-60"></div>
+            <p class="num-font text-xs text-emerald-200/75">
+                &copy; 2026 आदर्श किराणा स्टोअर्स, गंगाखेड. All Rights Reserved. | FSSAI Registered
+            </p>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         11. FLOATING BUTTONS: BOTTOM-LEFT "अभिप्राय द्या" & BOTTOM-RIGHT SCROLL TOP
+    ========================================================================== -->
+    <button type="button" onclick="openExitPopupModal()"
+            class="fixed bottom-5 left-4 sm:left-6 z-40 inline-flex items-center gap-2 bg-emeraldDeep hover:bg-emeraldRoyal text-white border-2 border-goldWarm text-xs sm:text-sm font-bold px-4 py-3 rounded-full shadow-2xl hover:-translate-y-0.5 transition-all cursor-pointer">
+        <i class="fa-solid fa-star text-goldWarm"></i>
+        <span>अभिप्राय द्या</span>
+    </button>
+
+    <button id="backToTopBtn" type="button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="वर जा"
+            class="hidden fixed bottom-5 right-4 sm:right-6 z-40 w-12 h-12 rounded-full bg-white hover:bg-emeraldDeep text-emeraldDeep hover:text-white border-2 border-emeraldDeep/20 items-center justify-center shadow-xl transition-all cursor-pointer">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- =========================================================================
+         12. PHOTO GALLERY LIGHTBOX MODAL
+    ========================================================================== -->
+    <div id="photoLightbox"
+         class="fixed inset-0 z-[80] hidden items-center justify-center bg-black/90 backdrop-blur-md p-4">
+        <div class="relative max-w-4xl w-full modal-pop">
+            <button type="button" onclick="closePhotoLightbox()" aria-label="बंद करा"
+                    class="absolute -top-12 right-0 w-10 h-10 rounded-full bg-white/15 hover:bg-goldWarm hover:text-inkDark text-white flex items-center justify-center transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="rounded-2xl overflow-hidden border-2 border-goldWarm bg-black shadow-2xl">
+                <img id="lightboxImgEl" src="" alt="दुकानाचा फोटो" class="w-full max-h-[76vh] object-contain">
+                <div class="px-5 py-4 bg-emeraldDeep text-center">
+                    <p id="lightboxCaptionEl" class="font-marathi text-base sm:text-lg text-amber-100 font-semibold"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         13. 3-STEP EXIT FEEDBACK POPUP MODAL
+    ========================================================================== -->
+    <div id="exitPopupModal"
+         class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4">
+        <div class="relative w-full max-w-md rounded-3xl bg-white border-2 border-emeraldDeep p-6 sm:p-8 text-center text-inkDark shadow-2xl modal-pop">
+            <button type="button" onclick="closeExitPopupModal()" aria-label="बंद करा"
+                    class="absolute top-4 right-4 w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- STEP 1 -->
+            <div id="popupStep1">
+                <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center">
+                    <span class="font-rozha text-3xl text-emeraldDeep pt-1">आ</span>
+                </div>
+                <h3 class="font-rozha text-2xl sm:text-3xl text-emeraldDeep mb-2">आदर्श किराणा स्टोअर्स</h3>
+                <p class="text-gray-700 text-base sm:text-lg font-medium mb-7 leading-relaxed">
+                    तुम्हाला नक्की ही वेबसाईट सोडायची आहे का?
+                </p>
+                <div class="grid grid-cols-2 gap-3.5">
+                    <button type="button" onclick="closeExitPopupModal()"
+                            class="py-3.5 px-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-inkDark font-bold text-sm sm:text-base transition-colors cursor-pointer">
+                        नाही (No)
+                    </button>
+                    <button type="button" onclick="showPopupStep(2)"
+                            class="py-3.5 px-4 rounded-xl bg-emeraldDeep hover:bg-emeraldRoyal text-white font-bold text-sm sm:text-base shadow-md transition-colors cursor-pointer">
+                        होय (Yes)
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div id="popupStep2" class="hidden">
+                <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-goldLuxury text-2xl">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h3 class="font-rozha text-2xl sm:text-3xl text-emeraldDeep mb-2">एक छोटासा प्रश्न</h3>
+                <p class="text-gray-700 text-base sm:text-lg font-medium mb-7 leading-relaxed">
+                    तुम्ही आमच्या दुकानाला भेट दिली आहे का किंवा खरेदी केली आहे का?
+                </p>
+                <div class="grid grid-cols-2 gap-3.5">
+                    <button type="button" onclick="handleStoreVisited(false)"
+                            class="py-3.5 px-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-inkDark font-bold text-sm sm:text-base transition-colors cursor-pointer">
+                        नाही
+                    </button>
+                    <button type="button" onclick="handleStoreVisited(true)"
+                            class="py-3.5 px-4 rounded-xl bg-emeraldDeep hover:bg-emeraldRoyal text-white font-bold text-sm sm:text-base shadow-md transition-colors cursor-pointer">
+                        होय
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div id="popupStep3" class="hidden">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-goldWarm text-xl">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="font-rozha text-2xl sm:text-3xl text-emeraldDeep mb-1.5">तुमचा अभिप्राय द्या</h3>
+                <p class="text-gray-600 text-xs sm:text-sm mb-4">
+                    कृपया १ ते ५ स्टार रेटिंग निवडा व सुधारणेसाठी तुमचा अभिप्राय लिहा:
+                </p>
+
+                <!-- Interactive 1 to 5 Star Rating -->
+                <div id="ratingStarsContainer" class="flex items-center justify-center gap-2.5 text-3xl mb-2">
+                    <button type="button" onclick="setPopupRating(1)" class="rating-star text-goldWarm transition-transform hover:scale-125 cursor-pointer" aria-label="1 स्टार"><i class="fa-solid fa-star"></i></button>
+                    <button type="button" onclick="setPopupRating(2)" class="rating-star text-goldWarm transition-transform hover:scale-125 cursor-pointer" aria-label="2 स्टार"><i class="fa-solid fa-star"></i></button>
+                    <button type="button" onclick="setPopupRating(3)" class="rating-star text-goldWarm transition-transform hover:scale-125 cursor-pointer" aria-label="3 स्टार"><i class="fa-solid fa-star"></i></button>
+                    <button type="button" onclick="setPopupRating(4)" class="rating-star text-goldWarm transition-transform hover:scale-125 cursor-pointer" aria-label="4 स्टार"><i class="fa-solid fa-star"></i></button>
+                    <button type="button" onclick="setPopupRating(5)" class="rating-star text-goldWarm transition-transform hover:scale-125 cursor-pointer" aria-label="5 स्टार"><i class="fa-solid fa-star"></i></button>
+                </div>
+
+                <p id="ratingLabelPill" class="num-font inline-block text-xs font-bold text-growwDeep bg-growwMint border border-growwGreen/30 px-3.5 py-1 rounded-full mb-4">
+                    5 / 5 — उत्कृष्ट अनुभव!
+                </p>
+
+                <label for="popupFeedbackInput" class="sr-only">कोणती सुधारणा झाली पाहिजे?</label>
+                <textarea id="popupFeedbackInput" rows="3"
+                          placeholder="कोणती सुधारणा झाली पाहिजे किंवा तुमचा अभिप्राय इथे लिहा..."
+                          class="w-full rounded-xl bg-ivory border border-gray-300 focus:border-growwGreen focus:ring-2 focus:ring-growwGreen/20 text-inkDark placeholder-gray-500 text-sm p-3.5 outline-none resize-none mb-4"></textarea>
+
+                <button type="button" onclick="sendPopupFeedbackWhatsApp()"
+                        class="w-full py-3.5 px-5 rounded-xl bg-[#25D366] hover:bg-[#1EB954] text-white font-bold text-sm sm:text-base shadow-lg transition-all cursor-pointer flex items-center justify-center gap-2.5">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>WhatsApp वर अभिप्राय पाठवा</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         14. NON-BLOCKING TOAST MESSAGE BOX (No alert/confirm anywhere)
+    ========================================================================== -->
+    <div id="customToast"
+         class="fixed top-20 left-1/2 -translate-x-1/2 z-[110] hidden items-center gap-3 bg-emeraldDeep text-white border border-goldWarm px-5 py-3.5 rounded-2xl shadow-2xl max-w-[92vw] modal-pop">
+        <i class="fa-solid fa-circle-check text-goldWarm text-lg shrink-0"></i>
+        <p id="customToastMsg" class="text-xs sm:text-sm font-medium"></p>
+    </div>
+
+    <!-- =========================================================================
+         15. COMPLETE SELF-CONTAINED JAVASCRIPT ENGINE
+    ========================================================================== -->
+    <script>
+        /* =====================================================================
+           1. INITIALIZE ALL INTERACTIVE MODULES ON WINDOW LOAD
+        ===================================================================== */
+        window.addEventListener('load', function () {
+            initGoldenHeroCanvas();
+            updateStoreOpenStatus();
+            setInterval(updateStoreOpenStatus, 60000);
+            initRevealObserver();
+            initTrustStatsAnimation();
+            initBudgetCalculator();
+            loadSavedGroceryList();
+            initDesktopExitIntent();
+        });
+
+        /* =====================================================================
+           2. SMOOTH SCROLL TO CALCULATOR + BRIEF HIGHLIGHT PULSE
+        ===================================================================== */
+        function scrollToCalculator(withPulse) {
+            try {
+                const section = document.getElementById('budget-calculator');
+                const card = document.getElementById('calculatorMainCard');
+                if (!section) return;
+
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                if (withPulse && card) {
+                    card.classList.remove('calc-pulse-active');
+                    void card.offsetWidth; // force reflow to replay pulse
+                    setTimeout(() => {
+                        card.classList.add('calc-pulse-active');
+                    }, 420);
+                }
+            } catch (err) {
+                console.error('Scroll to calculator error:', err);
+            }
+        }
+
+        /* =====================================================================
+           3. LIVE STORE OPEN / CLOSED STATUS BADGE (IST: 8:30 AM TO 9:00 PM)
+        ===================================================================== */
+        function updateStoreOpenStatus() {
+            try {
+                const now = new Date();
+                const utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);
+                const ist = new Date(utcMs + (5.5 * 3600000));
+                const mins = (ist.getHours() * 60) + ist.getMinutes();
+
+                const isOpen = mins >= (8 * 60 + 30) && mins < (21 * 60);
+                const dot = document.getElementById('storeStatusDot');
+                const text = document.getElementById('storeStatusText');
+                if (!dot || !text) return;
+
+                if (isOpen) {
+                    dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]';
+                    text.textContent = 'दुकान सध्या सुरू आहे (सकाळी ८:३० ते रात्री ९:००)';
+                } else {
+                    dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]';
+                    text.textContent = 'दुकान सध्या बंद आहे (सकाळी ८:३० वाजता उघडेल)';
+                }
+            } catch (err) {
+                console.error('Store status error:', err);
+            }
+        }
+
+        /* =====================================================================
+           4. SUBTLE GOLDEN SHIMMER PARTICLES CANVAS (HERO)
+        ===================================================================== */
+        function initGoldenHeroCanvas() {
+            try {
+                const canvas = document.getElementById('heroGoldenParticles');
+                if (!canvas) return;
+                const ctx = canvas.getContext('2d');
+                let particles = [];
+                let animId = null;
+
+                function setupCanvas() {
+                    const host = canvas.parentElement;
+                    canvas.width = host ? host.clientWidth : window.innerWidth;
+                    canvas.height = host ? host.clientHeight : window.innerHeight;
+                    const count = Math.min(54, Math.max(20, Math.floor(canvas.width / 28)));
+                    particles = [];
+                    for (let i = 0; i < count; i++) {
+                        particles.push({
+                            x: Math.random() * canvas.width,
+                            y: Math.random() * canvas.height,
+                            r: Math.random() * 2.1 + 0.7,
+                            vx: (Math.random() - 0.5) * 0.28,
+                            vy: -(Math.random() * 0.42 + 0.12),
+                            alpha: Math.random() * 0.52 + 0.18
+                        });
+                    }
+                }
+
+                function loop() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    for (let i = 0; i < particles.length; i++) {
+                        const p = particles[i];
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        if (p.y < -6) {
+                            p.y = canvas.height + 6;
+                            p.x = Math.random() * canvas.width;
+                        }
+                        if (p.x < -6) p.x = canvas.width + 6;
+                        if (p.x > canvas.width + 6) p.x = -6;
+
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                        ctx.fillStyle = `rgba(245, 197, 66, ${p.alpha})`;
+                        ctx.fill();
+                    }
+                    animId = requestAnimationFrame(loop);
+                }
+
+                setupCanvas();
+                if (animId) cancelAnimationFrame(animId);
+                loop();
+                window.addEventListener('resize', setupCanvas);
+            } catch (err) {
+                console.error('Canvas particles error:', err);
+            }
+        }
+
+        /* =====================================================================
+           5. SCROLL EFFECTS, REVEAL & TRUST STATS COUNTERS
+        ===================================================================== */
+        window.addEventListener('scroll', function () {
+            const y = window.scrollY;
+            const bg = document.getElementById('heroBgLayer');
+            if (bg && y < window.innerHeight) {
+                bg.style.transform = `scale(1.06) translateY(${y * 0.12}px)`;
+            }
+            const topBtn = document.getElementById('backToTopBtn');
+            if (topBtn) {
+                if (y > 420) {
+                    topBtn.classList.remove('hidden');
+                    topBtn.classList.add('flex');
+                } else {
+                    topBtn.classList.add('hidden');
+                    topBtn.classList.remove('flex');
+                }
+            }
+        }, { passive: true });
+
+        function initRevealObserver() {
+            try {
+                const items = document.querySelectorAll('.reveal-item');
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-shown');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                items.forEach(el => observer.observe(el));
+            } catch (err) {
+                document.querySelectorAll('.reveal-item').forEach(el => el.classList.add('is-shown'));
+            }
+        }
+
+        function initTrustStatsAnimation() {
+            try {
+                const grid = document.getElementById('trustStatsGrid');
+                if (!grid) return;
+                let ran = false;
+
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !ran) {
+                            ran = true;
+                            document.querySelectorAll('.trust-counter').forEach(el => {
+                                const target = parseInt(el.getAttribute('data-target'), 10);
+                                const suffix = el.getAttribute('data-suffix') || '';
+                                const duration = 1050;
+                                const start = performance.now();
+
+                                function tick(now) {
+                                    const p = Math.min((now - start) / duration, 1);
+                                    const eased = 1 - Math.pow(1 - p, 3);
+                                    el.textContent = Math.round(target * eased) + suffix;
+                                    if (p < 1) requestAnimationFrame(tick);
+                                }
+                                requestAnimationFrame(tick);
+                            });
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.25 });
+
+                observer.observe(grid);
+            } catch (err) {
+                console.error('Stats animation error:', err);
+            }
+        }
+
+        /* =====================================================================
+           6. MOBILE MENU & TOAST NOTIFICATION
+        ===================================================================== */
+        function toggleMobileMenu() {
+            const drawer = document.getElementById('mobileMenuDrawer');
+            const icon = document.getElementById('mobileMenuIcon');
+            if (!drawer || !icon) return;
+            const opening = drawer.classList.contains('hidden');
+            drawer.classList.toggle('hidden', !opening);
+            icon.className = opening ? 'fa-solid fa-xmark text-lg' : 'fa-solid fa-bars text-lg';
+        }
+
+        let toastTimeout = null;
+        function showToastMessage(msg) {
+            const toast = document.getElementById('customToast');
+            const txt = document.getElementById('customToastMsg');
+            if (!toast || !txt) return;
+            txt.textContent = msg;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3200);
+        }
+
+        /* =====================================================================
+           7. GROWW-INSPIRED ULTRA-SMOOTH BUDGET CALCULATOR ENGINE
+        ===================================================================== */
+        let extraGroceryTier = 'regular'; // 'limited' | 'regular' | 'abundant'
+        let loaderTimer = null;
+
+        function initBudgetCalculator() {
+            syncSliderTracksAndPills();
+            computeAndRenderBudget(false);
+        }
+
+        function paintSliderFill(el, fillHex) {
+            if (!el) return;
+            const min = parseFloat(el.min);
+            const max = parseFloat(el.max);
+            const val = parseFloat(el.value);
+            const pct = ((val - min) / (max - min)) * 100;
+            el.style.background = `linear-gradient(90deg, ${fillHex} 0%, ${fillHex} ${pct}%, #e5e7eb ${pct}%, #e5e7eb 100%)`;
+        }
+
+        function syncSliderTracksAndPills() {
+            const mEl = document.getElementById('sliderMembers');
+            const gEl = document.getElementById('sliderGrains');
+            const oEl = document.getElementById('sliderOil');
+
+            paintSliderFill(mEl, '#00b386');
+            paintSliderFill(gEl, '#00b386');
+            paintSliderFill(oEl, '#d4a017');
+
+            document.getElementById('pillMembers').textContent = `${mEl.value} सदस्य`;
+            document.getElementById('pillGrains').textContent = `${gEl.value} किलो`;
+            document.getElementById('pillOil').textContent = `${oEl.value} लिटर`;
+        }
+
+        function handleSliderMove() {
+            syncSliderTracksAndPills();
+            showLiveCue(true);
+            computeAndRenderBudget(false);
+        }
+
+        function stepSlider(id, delta) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const min = parseInt(el.min, 10);
+            const max = parseInt(el.max, 10);
+            const next = Math.min(max, Math.max(min, parseInt(el.value, 10) + delta));
+            el.value = next;
+            handleSliderMove();
+        }
+
+        function selectExtraLevel(level, clickedBtn) {
+            extraGroceryTier = level;
+            document.querySelectorAll('.extra-pill').forEach(btn => {
+                btn.className = 'extra-pill py-3 px-3 rounded-xl text-sm sm:text-base font-semibold border border-gray-200 bg-gray-50 text-gray-700 hover:border-growwGreen transition-all cursor-pointer';
+            });
+            clickedBtn.className = 'extra-pill py-3 px-3 rounded-xl text-sm sm:text-base font-bold border-2 border-growwGreen bg-growwMint text-growwDeep shadow-xs transition-all cursor-pointer';
+            showLiveCue(true);
+            computeAndRenderBudget(false);
+        }
+
+        function showLiveCue(visible) {
+            const cue = document.getElementById('liveRecalcCue');
+            if (!cue) return;
+            if (visible) {
+                cue.classList.remove('hidden');
+                cue.classList.add('flex');
+            } else {
+                cue.classList.add('hidden');
+                cue.classList.remove('flex');
+            }
+        }
+
+        // Smooth Dual-Ring Loader (~850ms) on clicking "बजेट तपासा (Check Budget)"
+        function runAnimatedBudgetCheck() {
+            const loader = document.getElementById('budgetLoaderOverlay');
+            const resultCard = document.getElementById('calcResultCard');
+            if (!loader) return;
+
+            if (loaderTimer) clearTimeout(loaderTimer);
+            showLiveCue(false);
+            clearDonutArcs();
+
+            loader.classList.remove('hidden');
+            loader.classList.add('flex');
+
+            if (window.innerWidth < 1024 && resultCard) {
+                resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            loaderTimer = setTimeout(() => {
+                loader.classList.add('hidden');
+                loader.classList.remove('flex');
+                computeAndRenderBudget(true);
+            }, 850);
+        }
+
+        function clearDonutArcs() {
+            const C = 2 * Math.PI * 68;
+            ['donutArcGrains', 'donutArcOil', 'donutArcOthers'].forEach(id => {
+                const arc = document.getElementById(id);
+                if (arc) {
+                    arc.setAttribute('stroke-dasharray', `0 ${C.toFixed(2)}`);
+                    arc.setAttribute('stroke-dashoffset', '0');
+                }
+            });
+        }
+
+        function animateCurrency(el, target) {
+            const duration = 620;
+            const start = performance.now();
+            function frame(now) {
+                const p = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - p, 3);
+                el.textContent = '₹' + Math.round(target * eased).toLocaleString('en-IN');
+                if (p < 1) requestAnimationFrame(frame);
+            }
+            requestAnimationFrame(frame);
+        }
+
+        function computeAndRenderBudget(animate) {
+            try {
+                const members = parseInt(document.getElementById('sliderMembers').value, 10) || 4;
+                const grainsKg = parseInt(document.getElementById('sliderGrains').value, 10) || 20;
+                const oilLitre = parseInt(document.getElementById('sliderOil').value, 10) || 4;
+
+                // Realistic Gangakhed local rates
+                const tierConfig = {
+                    limited:  { grainRate: 68, oilRate: 195, memberOther: 380, baseOther: 300 },
+                    regular:  { grainRate: 80, oilRate: 235, memberOther: 520, baseOther: 500 },
+                    abundant: { grainRate: 96, oilRate: 290, memberOther: 700, baseOther: 700 }
+                };
+                const cfg = tierConfig[extraGroceryTier] || tierConfig.regular;
+
+                const grainsCost = Math.round((grainsKg * cfg.grainRate) / 50) * 50;
+                const oilCost = Math.round((oilLitre * cfg.oilRate) / 50) * 50;
+                const othersCost = Math.round((cfg.baseOther + (members * cfg.memberOther)) / 50) * 50;
+                const grandTotal = grainsCost + oilCost + othersCost;
+
+                const lowRange = Math.round((grandTotal * 0.92) / 50) * 50;
+                const highRange = Math.round((grandTotal * 1.09) / 50) * 50;
+
+                const pGrains = Math.round((grainsCost / grandTotal) * 100);
+                const pOil = Math.round((oilCost / grandTotal) * 100);
+                const pOthers = Math.max(0, 100 - pGrains - pOil);
+
+                const valGrainsEl = document.getElementById('valGrains');
+                const valOilEl = document.getElementById('valOil');
+                const valOthersEl = document.getElementById('valOthers');
+                const valTotalEl = document.getElementById('valGrandTotal');
+                const donutTotalEl = document.getElementById('donutTotalValue');
+
+                document.getElementById('pctGrains').textContent = `(${pGrains}%)`;
+                document.getElementById('pctOil').textContent = `(${pOil}%)`;
+                document.getElementById('pctOthers').textContent = `(${pOthers}%)`;
+                document.getElementById('budgetRangeText').textContent =
+                    `₹${lowRange.toLocaleString('en-IN')} ते ₹${highRange.toLocaleString('en-IN')}`;
+
+                if (animate) {
+                    animateCurrency(valGrainsEl, grainsCost);
+                    animateCurrency(valOilEl, oilCost);
+                    animateCurrency(valOthersEl, othersCost);
+                    animateCurrency(valTotalEl, grandTotal);
+                    animateCurrency(donutTotalEl, grandTotal);
+                } else {
+                    valGrainsEl.textContent = '₹' + grainsCost.toLocaleString('en-IN');
+                    valOilEl.textContent = '₹' + oilCost.toLocaleString('en-IN');
+                    valOthersEl.textContent = '₹' + othersCost.toLocaleString('en-IN');
+                    valTotalEl.textContent = '₹' + grandTotal.toLocaleString('en-IN');
+                    donutTotalEl.textContent = '₹' + grandTotal.toLocaleString('en-IN');
+                }
+
+                // Update Smooth SVG Donut Chart
+                const C = 2 * Math.PI * 68; // 427.2566
+                const safeTotal = Math.max(grandTotal, 1);
+                const l1 = (grainsCost / safeTotal) * C;
+                const l2 = (oilCost / safeTotal) * C;
+                const l3 = (othersCost / safeTotal) * C;
+                const gap = 3.5;
+
+                const updateArcs = () => {
+                    const a1 = document.getElementById('donutArcGrains');
+                    const a2 = document.getElementById('donutArcOil');
+                    const a3 = document.getElementById('donutArcOthers');
+
+                    a1.setAttribute('stroke-dasharray', `${Math.max(0, l1 - gap).toFixed(2)} ${C.toFixed(2)}`);
+                    a1.setAttribute('stroke-dashoffset', '0');
+
+                    a2.setAttribute('stroke-dasharray', `${Math.max(0, l2 - gap).toFixed(2)} ${C.toFixed(2)}`);
+                    a2.setAttribute('stroke-dashoffset', `${(-l1).toFixed(2)}`);
+
+                    a3.setAttribute('stroke-dasharray', `${Math.max(0, l3 - gap).toFixed(2)} ${C.toFixed(2)}`);
+                    a3.setAttribute('stroke-dashoffset', `${(-(l1 + l2)).toFixed(2)}`);
+                };
+
+                if (animate) {
+                    requestAnimationFrame(() => setTimeout(updateArcs, 35));
+                } else {
+                    updateArcs();
+                }
+            } catch (err) {
+                console.error('Budget calculator error:', err);
+            }
+        }
+
+        /* =====================================================================
+           8. OFFLINE GROCERY LIST MAKER (localStorage + WhatsApp + Safe Copy)
+        ===================================================================== */
+        const STORAGE_KEY = 'adarsh_kirana_list_v4';
+        let userGroceryList = [];
+
+        function loadSavedGroceryList() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (raw) {
+                    const parsed = JSON.parse(raw);
+                    if (Array.isArray(parsed)) userGroceryList = parsed;
+                }
+            } catch (err) {
+                userGroceryList = [];
+            }
+            renderGroceryUl();
+        }
+
+        function persistGroceryList() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(userGroceryList));
+            } catch (err) {
+                console.error('LocalStorage save error:', err);
+            }
+        }
+
+        function quickAddGrocery(text) {
+            const clean = String(text || '').trim();
+            if (!clean) return;
+            userGroceryList.push({ id: Date.now() + Math.floor(Math.random() * 9999), text: clean });
+            persistGroceryList();
+            renderGroceryUl();
+            showToastMessage(`"${clean}" यादीत जोडले आहे.`);
+        }
+
+        function handleCustomGrocerySubmit(e) {
+            e.preventDefault();
+            const nameEl = document.getElementById('itemNameInput');
+            const qtyEl = document.getElementById('itemQtyInput');
+            const name = nameEl.value.trim();
+            const qty = qtyEl.value.trim();
+            if (!name) return;
+
+            const entry = qty ? `${name} (${qty})` : name;
+            userGroceryList.push({ id: Date.now() + Math.floor(Math.random() * 9999), text: entry });
+            persistGroceryList();
+            renderGroceryUl();
+            showToastMessage(`"${entry}" यादीत जोडले आहे.`);
+            nameEl.value = '';
+            qtyEl.value = '';
+            nameEl.focus();
+        }
+
+        function removeGroceryItem(id) {
+            userGroceryList = userGroceryList.filter(item => item.id !== id);
+            persistGroceryList();
+            renderGroceryUl();
+        }
+
+        function clearAllGroceryItems() {
+            if (userGroceryList.length === 0) {
+                showToastMessage('यादी आधीच रिकामी आहे.');
+                return;
+            }
+            userGroceryList = [];
+            persistGroceryList();
+            renderGroceryUl();
+            showToastMessage('यादी साफ केली आहे.');
+        }
+
+        function sanitizeHtml(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function renderGroceryUl() {
+            const ul = document.getElementById('groceryListUl');
+            const badge = document.getElementById('groceryCountBadge');
+            const navBadge = document.getElementById('navListBadge');
+            const mobBadge = document.getElementById('mobileListBadge');
+            const count = userGroceryList.length;
+
+            if (badge) badge.textContent = `${count} वस्तू`;
+            if (navBadge) navBadge.textContent = count;
+            if (mobBadge) mobBadge.textContent = count;
+            if (!ul) return;
+
+            if (count === 0) {
+                ul.innerHTML = `
+                    <li class="text-center py-8 px-4 bg-white border border-dashed border-gray-300 rounded-2xl text-gray-500 text-sm">
+                        <i class="fa-solid fa-basket-shopping text-growwGreen/50 text-2xl mb-2 block"></i>
+                        सध्या यादी रिकामी आहे. वरील बटनांवर क्लिक करून किंवा नाव लिहून तुमची किराणा यादी तयार करा.
+                    </li>
+                `;
+                return;
+            }
+
+            ul.innerHTML = userGroceryList.map((item, idx) => `
+                <li class="flex items-center justify-between gap-3 bg-white border border-gray-200 rounded-xl px-4 py-3 shadow-xs">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <span class="num-font w-6 h-6 rounded-full bg-growwMint text-growwDeep font-bold text-xs flex items-center justify-center shrink-0">
+                            ${idx + 1}
+                        </span>
+                        <span class="text-sm sm:text-base font-semibold text-inkDark break-words">
+                            ${sanitizeHtml(item.text)}
+                        </span>
+                    </div>
+                    <button type="button" onclick="removeGroceryItem(${item.id})" aria-label="वस्तू काढा"
+                            class="w-9 h-9 rounded-lg bg-rose-50 hover:bg-rose-600 text-rose-600 hover:text-white flex items-center justify-center transition-colors shrink-0 cursor-pointer">
+                        <i class="fa-solid fa-trash-can text-xs"></i>
+                    </button>
+                </li>
+            `).join('');
+        }
+
+        function buildFormattedGroceryText() {
+            const lines = userGroceryList.map((item, i) => `${i + 1}. ${item.text}`);
+            return (
+                `नमस्कार, आदर्श किराणा स्टोअर्स (गंगाखेड)!\n` +
+                `माझी किराणा मालाची यादी खालीलप्रमाणे आहे:\n\n` +
+                lines.join('\n') +
+                `\n\nधन्यवाद!`
+            );
+        }
+
+        function shareGroceryListWhatsApp() {
+            if (userGroceryList.length === 0) {
+                showToastMessage('कृपया आधी यादीत किमान एक वस्तू टाका.');
+                return;
+            }
+            const url = `https://wa.me/919881111306?text=${encodeURIComponent(buildFormattedGroceryText())}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        // iFrame-safe Clipboard Copy using document.execCommand('copy')
+        function copyGroceryListToClipboard() {
+            if (userGroceryList.length === 0) {
+                showToastMessage('कॉपी करण्यासाठी आधी यादीत वस्तू जोडा.');
+                return;
+            }
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = buildFormattedGroceryText();
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                ta.setSelectionRange(0, ta.value.length);
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToastMessage('तुमची किराणा यादी यशस्वीरीत्या कॉपी झाली आहे!');
+            } catch (err) {
+                showToastMessage('यादी कॉपी करता आली नाही, कृपया WhatsApp बटण वापरा.');
+            }
+        }
+
+        /* =====================================================================
+           9. PHOTO LIGHTBOX MODAL
+        ===================================================================== */
+        function openPhotoLightbox(src, caption) {
+            const modal = document.getElementById('photoLightbox');
+            document.getElementById('lightboxImgEl').src = src;
+            document.getElementById('lightboxCaptionEl').textContent = caption;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhotoLightbox() {
+            const modal = document.getElementById('photoLightbox');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('photoLightbox').addEventListener('click', function (e) {
+            if (e.target === this) closePhotoLightbox();
+        });
+
+        /* =====================================================================
+           10. 3-STEP EXIT FEEDBACK POPUP MODAL
+        ===================================================================== */
+        let desktopExitFired = false;
+        let selectedFeedbackStars = 5;
+
+        const feedbackRatingLabels = {
+            1: '1 / 5 — सुधारणेची गरज आहे',
+            2: '2 / 5 — ठीक आहे',
+            3: '3 / 5 — चांगले आहे',
+            4: '4 / 5 — खूप छान!',
+            5: '5 / 5 — उत्कृष्ट अनुभव!'
+        };
+
+        function openExitPopupModal() {
+            showPopupStep(1);
+            setPopupRating(5);
+            const modal = document.getElementById('exitPopupModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeExitPopupModal() {
+            const modal = document.getElementById('exitPopupModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        function showPopupStep(stepNum) {
+            document.getElementById('popupStep1').classList.toggle('hidden', stepNum !== 1);
+            document.getElementById('popupStep2').classList.toggle('hidden', stepNum !== 2);
+            document.getElementById('popupStep3').classList.toggle('hidden', stepNum !== 3);
+        }
+
+        function handleStoreVisited(visited) {
+            if (visited) {
+                showPopupStep(3);
+            } else {
+                closeExitPopupModal();
+                showToastMessage('धन्यवाद! गंगाखेडला आल्यावर आमच्या दुकानाला अवश्य भेट द्या.');
+            }
+        }
+
+        function setPopupRating(stars) {
+            selectedFeedbackStars = stars;
+            document.querySelectorAll('#ratingStarsContainer .rating-star').forEach((btn, i) => {
+                if (i < stars) {
+                    btn.classList.remove('text-gray-300');
+                    btn.classList.add('text-goldWarm');
+                } else {
+                    btn.classList.remove('text-goldWarm');
+                    btn.classList.add('text-gray-300');
+                }
+            });
+            document.getElementById('ratingLabelPill').textContent = feedbackRatingLabels[stars] || `${stars} / 5`;
+        }
+
+        function sendPopupFeedbackWhatsApp() {
+            const input = document.getElementById('popupFeedbackInput');
+            const comment = input.value.trim() || 'काही विशेष सुधारणा सुचवलेली नाही.';
+            const message =
+                `नमस्कार, आदर्श किराणा स्टोअर्स (गंगाखेड)!\n` +
+                `माझा ग्राहक अभिप्राय:\n` +
+                `⭐ रेटिंग: ${selectedFeedbackStars} / 5\n` +
+                `💬 सुधारणा / अभिप्राय: ${comment}`;
+
+            window.open(`https://wa.me/919881111306?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+            input.value = '';
+            closeExitPopupModal();
+            showToastMessage('धन्यवाद! तुमचा अभिप्राय WhatsApp वर पाठवण्यासाठी उघडला आहे.');
+        }
+
+        document.getElementById('exitPopupModal').addEventListener('click', function (e) {
+            if (e.target === this) closeExitPopupModal();
+        });
+
+        function initDesktopExitIntent() {
+            document.addEventListener('mouseleave', function (e) {
+                if (e.clientY <= 10 && !desktopExitFired) {
+                    desktopExitFired = true;
+                    openExitPopupModal();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closePhotoLightbox();
+                closeExitPopupModal();
+            }
+        });
+    </script>
+</body>
+</html>
